@@ -14,6 +14,38 @@
       line-height: 1.6;
     }
 
+    header {
+      border-bottom: 1px solid #30363d;
+      background: #0e1117;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    nav a {
+      color: #e6edf3;
+      padding: 0.35rem 0.6rem;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #161b22;
+    }
+
+    nav a.active {
+      background: #161b22;
+      border: 1px solid #30363d;
+    }
+
     main {
       max-width: 900px;
       margin: auto;
@@ -38,38 +70,6 @@
       text-decoration: underline;
     }
 
-    /* NEW: nav styles */
-    header {
-      border-bottom: 1px solid #30363d;
-      background: #0e1117;
-      position: sticky;
-      top: 0;
-    }
-
-    nav {
-      max-width: 900px;
-      margin: auto;
-      padding: 1rem 1.5rem;
-      display: flex;
-      gap: 1rem;
-    }
-
-    nav a {
-      color: #e6edf3;
-      padding: 0.35rem 0.6rem;
-      border-radius: 10px;
-    }
-
-    nav a:hover {
-      background: #161b22;
-      text-decoration: none;
-    }
-
-    nav a.active {
-      background: #161b22;
-      border: 1px solid #30363d;
-    }
-
     .tag {
       display: inline-block;
       margin-right: 0.5rem;
@@ -84,7 +84,7 @@
       display: flex;
       gap: 2rem;
       margin: 2rem 0;
-      flex-wrap: wrap; /* NEW: makes it mobile-friendly */
+      flex-wrap: wrap;
     }
 
     .photo {
@@ -106,14 +106,15 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
     <nav>
       <a href="index.html" class="active">Home</a>
-      <a href="about.html">About</a>
-      <a href="racing.html">Racing</a>
-      <a href="contact.html">Contact</a>
+      <a href="training.html">Training</a>
+      <a href="kinesiology.html">Kinesiology</a>
+      <a href="work.html">Work</a>
     </nav>
   </header>
 
@@ -133,6 +134,12 @@
       </figure>
     </div>
 
+    <h2>About</h2>
+    <p>
+      Kinesiology graduate and endurance athlete based in Victoria, BC.
+      I compete in marathons, triathlon, duathlon, and trail racing while working in allied healthcare.
+    </p>
+
     <h2>Highlights</h2>
     <div>
       <span class="tag">Marathon 3:42</span>
@@ -140,7 +147,16 @@
       <span class="tag">Finlayson Arm 28km 2025</span>
       <span class="tag">UVic Kinesiology graduate 2025</span>
     </div>
-  </main>
 
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:lucasgage55@gmail.com">lucasgage55@gmail.com</a><br>
+      Instagram: <a href="https://instagram.com/lucasgage55" target="_blank" rel="noopener">@lucasgage55</a><br>
+      Strava: <a href="https://strava.com/athletes/59445470" target="_blank" rel="noopener">Strava</a><br>
+      LinkedIn: <a href="https://linkedin.com/in/lucas-gage-48b368141" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+
+  </main>
 </body>
 </html>
+
