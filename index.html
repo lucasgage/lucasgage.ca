@@ -13,25 +13,63 @@
       color: #e6edf3;
       line-height: 1.6;
     }
+
     main {
       max-width: 900px;
       margin: auto;
       padding: 3rem 1.5rem;
     }
+
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
     }
+
     h2 {
       margin-top: 3rem;
     }
+
     a {
       color: #58a6ff;
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
+
+    /* NEW: nav styles */
+    header {
+      border-bottom: 1px solid #30363d;
+      background: #0e1117;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #e6edf3;
+      padding: 0.35rem 0.6rem;
+      border-radius: 10px;
+    }
+
+    nav a:hover {
+      background: #161b22;
+      text-decoration: none;
+    }
+
+    nav a.active {
+      background: #161b22;
+      border: 1px solid #30363d;
+    }
+
     .tag {
       display: inline-block;
       margin-right: 0.5rem;
@@ -41,36 +79,48 @@
       font-size: 0.85rem;
       color: #8b949e;
     }
+
     .photo-row {
       display: flex;
       gap: 2rem;
       margin: 2rem 0;
+      flex-wrap: wrap; /* NEW: makes it mobile-friendly */
     }
-    
+
     .photo {
       width: 200px;
       height: auto;
       border-radius: 12px;
       display: block;
     }
-    
+
     .photo-row figure {
       margin: 0;
       text-align: center;
     }
-    
+
     .photo-row figcaption {
       margin-top: 0.5rem;
       font-size: 0.85rem;
       color: #8b949e;
     }
-    
   </style>
 </head>
 <body>
+
+  <header>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+      <a href="racing.html">Racing</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
   <main>
     <h1>Lucas Gage</h1>
     <p><strong>Racing Through Life</strong></p>
+
     <div class="photo-row">
       <figure>
         <img src="images/duathlon-worlds-bike.JPG" alt="Lucas Gage racing" class="photo">
@@ -83,16 +133,6 @@
       </figure>
     </div>
 
-    <h2>About</h2>
-      Kinesiology graduate and endurance athlete based in Victoria, BC.
-      I compete in marathons, triathlon, duathlon, trail racing while working in allied health care.
-    </p>
-
-    <h2>What I do</h2>
-    <p>
-      Running • Cycling • Triathlon • Kinesiology
-    </p>
-
     <h2>Highlights</h2>
     <div>
       <span class="tag">Marathon 3:42</span>
@@ -100,25 +140,7 @@
       <span class="tag">Finlayson Arm 28km 2025</span>
       <span class="tag">UVic Kinesiology graduate 2025</span>
     </div>
-
-    <h2>Racing / Results</h2>
-    <ul>
-      <li><strong>Royal Victoria Marathon</strong> — 4:39:12 (2025)</li>
-      <li><strong>Finlayson Arm 28K</strong> — 4:15:56 (2025)</li>
-      <li><strong>Royal Victoria Marathon</strong> — 3:42:12 (2024)</li>
-      <li><strong>Victoria Half Sprint Triathlon</strong> — 1:37:45 (2025)</li>
-      <li><strong>Duathlon World Championships</strong> — Team Canada (2024)</li>
-      <li><strong>BMO Vancouver Marathon</strong> — 3:50:52 (2023)</li>
-    </ul>
-
-    <h2>Contact</h2>
-    <p>    
-      Email: <a href="mailto:lucasgage55@gmail.com">lucasgage55@gmail.com</a><br>
-      Instagram: <a href="https://instagram.com/lucasgage55" target="_blank">@lucasgage55</a><br>
-      Strava: <a href="https://strava.com/athletes/59445470" target="_blank">Strava</a><br>
-      LinkedIn: <a href="https://linkedin.com/in/lucas-gage-48b368141" target="_blank">LinkedIn</a><br>
-
-    </p>
   </main>
+
 </body>
 </html>
