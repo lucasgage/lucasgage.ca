@@ -1,14 +1,14 @@
     body {
       margin: 48px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: red;
+      background: blue;
       color: #e6edf3;
       line-height: 1.6;
     }
 
     header {
       border-bottom: 1px solid #30363d;
-      background: #0e1117;
+      background: red;
       position: sticky;
       top: 0;
     }
