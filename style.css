@@ -1,1 +1,107 @@
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0e1117;
+      color: #e6edf3;
+      line-height: 1.6;
+    }
 
+    header {
+      border-bottom: 1px solid #30363d;
+      background: #0e1117;
+      position: sticky;
+      top: 0;
+    }
+
+    nav {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    nav a {
+      color: #e6edf3;
+      padding: 0.35rem 0.6rem;
+      border-radius: 10px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background: #161b22;
+    }
+
+    nav a.active {
+      background: #161b22;
+      border: 1px solid #30363d;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h2 {
+      margin-top: 3rem;
+    }
+
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      padding: 0.25rem 0.6rem;
+      border: 1px solid #30363d;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+
+    .photo-row {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+      flex-wrap: wrap;
+    }
+
+    .photo {
+      width: 200px;
+      height: auto;
+      border-radius: 12px;
+      display: block;
+    }
+
+    .photo-row figure {
+      margin: 0;
+      text-align: center;
+    }
+
+    .photo-row figcaption {
+      margin-top: 0.5rem;
+      font-size: 0.85rem;
+      color: #8b949e;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    li {
+      margin: 0.6rem 0;
+    }
