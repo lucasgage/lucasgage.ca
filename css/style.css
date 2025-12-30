@@ -106,3 +106,11 @@
     li {
       margin: 0.6rem 0;
     }
+    .site-footer {
+      margin-top: 4rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
+      font-size: 0.85rem;
+      text-align: center;
+    }
