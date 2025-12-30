@@ -54,6 +54,13 @@
       margin-top: 3rem;
     }
 
+    h3 {
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      color: #e6edf3;
+    }
+
     a {
       color: #58a6ff;
       text-decoration: none;
